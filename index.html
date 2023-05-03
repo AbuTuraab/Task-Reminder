@@ -46,7 +46,9 @@
     <body class="d-grid gap-3  border-0 bd-example"> 
 
         <!-- Example Code -->
-        <h3 class="new">Create a New Reminder</h3>
+        <div class="header">
+         <h3 class="new">Create a New Reminder</h3>
+        </div>
         <form>
           <div class="mb-3 m-auto p-2">
             <label  class="form-label">Task</label>
@@ -55,11 +57,11 @@
           </div>
           <div class="mb-3 p-2">
             <label  class="form-label">Date</label>
-            <input type="datetime-local" class="form-control" id="details">
+            <input type="datetime-local" class="form-control" id="date">
           </div>
           <div class="form-group p-2">
             <label for="e">Details</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control details" id="details exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <!-- <div class=" form-group p-2">
             <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
@@ -73,25 +75,25 @@
 
         
             <label class = "checkbox-inline form-check-label ">
-               <input class="form-check-input" type = "checkbox" value = "">Every 5 minutes
+               <input class="form-check-input one" type = "checkbox" value = "300000" id="one">Every 5 minutes
             </label>
             <label class = "checkbox-inline form-check-label">
-               <input class="form-check-input" type="checkbox" value="">Every 30 minutes
+               <input class="form-check-input two" type="checkbox" value="1800000" id="two">Every 30 minutes
             </label>
             <label class = "checkbox-inline form-check-label">
-               <input class="form-check-input" type = "checkbox" value = "">Every 1 hour
+               <input class="form-check-input three" type = "checkbox" value = "3600000" id="three">Every 1 hour
             </label>
             <label class = "checkbox-inline form-check-label">
-                <input class="form-check-input" type = "checkbox" value = "">Every 12 hours
+                <input class="form-check-input four" type = "checkbox" value = "43200000" id="four">Every 12 hours
              </label>
              <label class = "checkbox-inline form-check-label">
-                <input class="form-check-input" type = "checkbox" value = "">Everyday
+                <input class="form-check-input five" type = "checkbox" value = "86400000" id="five">Everyday
              </label>
              <label class = "checkbox-inline form-check-label">
-                <input class="form-check-input" type = "checkbox" value = "">Everyweek
+                <input class="form-check-input six" type = "checkbox" value = "604800000" id="six">Everyweek
              </label>
              <label class = "checkbox-inline form-check-label">
-                <input class="form-check-input" type = "checkbox" value = "">Every month
+                <input class="form-check-input seven" type = "checkbox" value = "2592000000" id="seven">Every 30 days
              </label>
         </div>
         </form>
@@ -101,10 +103,10 @@
            
             
 
-            <button type="button" class=" btn-group me-5 btn btn-secondary">Cancel</button>
+            <button type="button" class="cancel btn-group me-5 btn btn-secondary">Cancel</button>
          
            
-            <button type="button" class="btn-group me-2 btn btn-success">Success</button>
+            <button type="button" class="submit btn-group me-2 btn btn-success">Success</button>
           </div>
 
 
@@ -113,6 +115,6 @@
        </body>  
 </div> 
 
-
+<script src="script.js"></script>
 </body>
 </html>

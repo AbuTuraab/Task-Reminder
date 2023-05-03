@@ -12,6 +12,7 @@
 } */
 
 .new{
+
     text-align: center;
 }
 body{
@@ -79,7 +80,7 @@ justify-content: center;
 
 .input{
   
-   
+   margin-top: 30px;
     background-color: aliceblue;
     display: block;
     position: absolute;
@@ -94,3 +95,12 @@ justify-content: center;
     transform: translate(-50%, -50%);
 }
 
+
+.input, .input .input{
+    opacity: 0;
+    transition: all 0.25ms;
+}
+
+.input.show, .input.show .input{
+    opacity: 1;
+}
